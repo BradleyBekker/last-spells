@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerBase : MonoBehaviour
 {
-
+    protected BaseWeapon weapon;
     protected float magicMeter;
     protected float speed;
 
@@ -30,6 +30,13 @@ public class PlayerBase : MonoBehaviour
 
     }
     
+    public void Shoot()
+    {
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+         weapon.ShotBehaviour();
+        }
+    }
 
 
 }

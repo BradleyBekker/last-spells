@@ -7,6 +7,7 @@ public class WindCharacter : PlayerBase
     // Start is called before the first frame update
     void Start()
     {
+        weapon = GetComponent<Lance>();
        speed = 5;   
     }
 
@@ -14,5 +15,6 @@ public class WindCharacter : PlayerBase
     void Update()
     {
         Movement();
+        Shoot();
     }
 }
