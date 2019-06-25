@@ -2,20 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WindCharacter : PlayerBase
+public class Health : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
-        magicMeter = 100;
-        weapon = GetComponent<Lance>();
-       speed = 5;   
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Movement();
-        Shoot();
+        
     }
 }

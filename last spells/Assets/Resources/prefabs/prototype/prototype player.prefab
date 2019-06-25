@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1244746164350558391}
   - component: {fileID: 2833781629716190862}
   - component: {fileID: 525445786}
+  - component: {fileID: 1488950782}
   m_Layer: 0
-  m_Name: hit_crystal
+  m_Name: hitCrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,6 +113,18 @@ PolygonCollider2D:
       - {x: -0.08713192, y: 0.0006504356}
       - {x: 0.0003480911, y: -0.09224737}
       - {x: 0.08819208, y: 0.00010259449}
+--- !u!114 &1488950782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5636546554341479343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37f0c6aa7cbecb0459c3020909860d21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8708916920355718154
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +137,8 @@ GameObject:
   - component: {fileID: 7856797493588765518}
   - component: {fileID: 1470951059}
   - component: {fileID: 1470951060}
+  - component: {fileID: 1392194565}
+  - component: {fileID: 1392194569}
   m_Layer: 0
   m_Name: prototype player
   m_TagString: Untagged
@@ -221,3 +236,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9efcf083c65f0c4479e71af67bc06273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1392194565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8708916920355718154}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ccb942ab0409e4b94db16db678b787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1392194569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8708916920355718154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b4063215f07f594d8cc75fe744d2e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCamera: {fileID: 0}

@@ -7,6 +7,18 @@ public class PlayerBase : MonoBehaviour
     protected BaseWeapon weapon;
     protected float magicMeter;
     protected float speed;
+    protected GameObject hitCrystal;
+    protected DamageCalculation DC;
+    private void Awake()
+    {
+        hitCrystal = GameObject.Find("hitCrystal");
+        if (hitCrystal != null)
+        {
+            DC = hitCrystal.GetComponent<DamageCalculation>();
+
+            DC.takedamage += DepleteMagicMeter;
+        }
+    }
 
     public void Movement() {
         if (Input.GetKey(KeyCode.W))
@@ -38,5 +50,13 @@ public class PlayerBase : MonoBehaviour
         }
     }
 
-
+    protected void DepleteMagicMeter(float amount)
+    {
+        magicMeter = magicMeter - amount;
+        print(magicMeter);
+    }
+    protected void FillMagicMeter(float amount)
+    {
+        magicMeter = magicMeter + amount;
+    }
 }

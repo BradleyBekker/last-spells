@@ -16,6 +16,7 @@ public class EnemyType01 : BaseEnemyBehaviour
     {
         
     }
+
     public override void ShotBehaviour()
     {
         shotOrigin.transform.Rotate(0, 0, 1);
@@ -25,5 +26,9 @@ public class EnemyType01 : BaseEnemyBehaviour
          }
 
         
+    }
+    public override void OnDameged()
+    {
+        health -= 1;
     }
 }

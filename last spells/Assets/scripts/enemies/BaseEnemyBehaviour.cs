@@ -20,8 +20,10 @@ public abstract class BaseEnemyBehaviour : MonoBehaviour
         ShotBehaviour();
         MoveBehaviour();
     }
+
     public abstract void MoveBehaviour();
     public abstract void ShotBehaviour();
+    public abstract void OnDameged();
     protected bool CanFire(float fireRate)
     {
         counter = counter + Time.deltaTime;
@@ -36,4 +38,14 @@ public abstract class BaseEnemyBehaviour : MonoBehaviour
             return false;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "PlayerShot")
+        {
+            OnDameged();
+        }    
+    }
+
+
 }
