@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BasicShot : MonoBehaviour
 {
-    protected float speed = 20;
+    protected float speed = 5;
     void Update()
     {
         MoveForward();

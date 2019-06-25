@@ -8,7 +8,6 @@ public class HitTest : MonoBehaviour
 
     private void Start()
     {
-        Instantiate(GameObject.Find("bullet"));
 
 
     }
