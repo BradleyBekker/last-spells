@@ -44,7 +44,9 @@ public abstract class BaseEnemyBehaviour : MonoBehaviour
         if (collision.tag == "PlayerShot")
         {
             OnDameged();
-        }    
+            Destroy(collision.gameObject);
+
+        }
     }
 
 

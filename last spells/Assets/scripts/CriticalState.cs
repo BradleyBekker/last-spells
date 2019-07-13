@@ -2,21 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WindCharacter : PlayerBase
+public class CriticalState : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        magicMeter = 100;
-        
-        weapon = GetComponent<Lance>();
-       speed = 5;   
-    }
+    private bool isCritical;
+
 
     // Update is called once per frame
     void Update()
     {
-        Movement();
-        Shoot();
+        
     }
 }
