@@ -7,18 +7,22 @@ public class EnemyType02 : BaseEnemyBehaviour
     GameObject shotOrigin;
     private void Start()
     {
+       
         shotOrigin = transform.GetChild(0).gameObject;
-        health = 10;
+        health = 5;
     }
 
     public override void MoveBehaviour()
     {
 
+       
+
+
     }
 
     public override void OnDameged()
     {
-        health -= 2;
+        health -= 1;
     }
 
     public override void ShotBehaviour()

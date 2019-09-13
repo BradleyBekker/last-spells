@@ -9,7 +9,7 @@ public class EnemyType01 : BaseEnemyBehaviour
     {
 
         shotOrigin = transform.GetChild(0).gameObject;
-        health = 10;
+        health = 5;
     }
 
     public override void MoveBehaviour()
@@ -29,6 +29,6 @@ public class EnemyType01 : BaseEnemyBehaviour
     }
     public override void OnDameged()
     {
-        health -= 2;
+        health -= 1;
     }
 }

@@ -78,6 +78,7 @@ public class PlayerBase : MonoBehaviour
     }
     protected void FillMagicMeter(float amount)
     {
+        if(GetMagicMeter() < 100)
         magicMeter = magicMeter + amount;
         print(magicMeter);
     }
